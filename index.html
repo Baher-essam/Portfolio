@@ -7,6 +7,8 @@
     <!--icons-->
     <link rel="stylesheet" type="text/css" href="css/all.min.css">
     <link rel="stylesheet" href="css/icofont.min.css">
+    <link rel="icon" href="Images/SjWuv.png">
+    <!--plugsin-->
     <link rel="stylesheet" href="css/fullpage.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -31,15 +33,15 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#section2">Section 2</a>
+                        <a class="nav-link" href="#section2">About me</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#section3">Section 3</a>
+                        <a class="nav-link" href="#section3">Portfolio</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#section4">Section 4</a>
+                        <a class="nav-link" href="#section4">Contact</a>
                     </li>
      
                 </ul>
@@ -55,7 +57,7 @@
 
     <!--end of header-->
 
-    <!--start of sections-->
+    <!--start of fullpage-->
 
     <div id="fullpage">
         <div class="section s1" data-anohor="section1">
@@ -84,7 +86,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="contact-title mb-5">
-                            <h1>Contact</h1>
+                            <h1><span></span>eeling Convinced <span></span></h1>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -94,13 +96,10 @@
                          <p><i class="icofont-location-pin pr-2"></i>Sheraton, Cairo, Egypt</p>
                          <p><i class="icofont-ui-message pr-2"></i><a href = "mailto: baher.essam@gmail.com">baher.essam@gmail.com</a></p>
                          <p class=""><i class="icofont-phone"></i>0114-678-6272</p>
-                         <ul class="list-unstyled contact-me">
-                            <li><a href="#"><i class="icofont-facebook"></i></a></li>
-                            <li><a href="#"><i class="icofont-twitter"></i></a></li>
-                            <li><a href="#"><i class="icofont-google-plus"></i></a></li>
-                            <li><a href="#"><i class="icofont-github"></i></a></li>
-                            <li><a href="#"><i class="icofont-behance"></i></a></li>
-                            <li><a href="#"><i class="icofont-dribbble"></i></a></li>
+                         <ul class="list-unstyled social-data text-center mt-5">
+                            <li><a href="https://www.facebook.com/baheeressam0" target="blank"><i class="icofont-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.behance.net/Baher-Essam" target="blank"><i class="icofont-behance"></i></a></li>
                         </ul>
                         </div>
                     </div>
@@ -109,12 +108,12 @@
                             <form name="contact-data" method="POST"  action="/thankyou.html" data-netlify-recaptcha="true" data-netlify="true">
                                 <div class="form-group">
                                     <label>Name:</label>
-                                    <input type="text" name="name" required  class="form-control"/>
+                                    <input type="text" name="name" required  class="form-control" placeholder="Your Name"/>
                                 </div>
                                 
                                 <div class="form-group">
                                     <label>Email:</label>
-                                    <input type="email" name="e-mail"  class="form-control" required/>
+                                    <input type="email" name="e-mail"  class="form-control" placeholder="someone@example.com" required/>
                                 </div>
                                <div class="form-group">
                                 <label>Number:</label>
@@ -123,20 +122,28 @@
                                 
                                <div class="form-group">
                                 <label>Message:</label>
-                                <textarea name="message" rows="4" class="form-control"></textarea>
+                                <textarea name="message" rows="4" class="form-control" 
+                                placeholder="Type Your Message..." required></textarea>
                                </div>
                                 <div data-netlify-recaptcha="true"></div>
-                                <button type="submit" class="btn btn-success">Send</button>
-                                <button type="reset" class="btn btn-success">reset</button>
+                                <button type="submit" class="btn btn-success">Send Message</button>
+                                <button type="reset" class="btn btn-warning">Reset Form</button>
                               </form>                              
                         </div>
                     </div>
                 </div>
             </div>
+        
         </div>
+    <!--start of footer-->
+    <footer class="text-sm-center mt-4 text-black fp-auto-height">
+        <p class="py-2 my-0">all rights reserved | 2019</p>
+    </footer>
+    <!--end of footer-->
     </div>
-    <!--end of sections-->
+    <!--end of fullpage-->
 
+ 
 
     <!--start of scripts-->
     <script src="js/jquery-3.4.1.min.js"></script>

@@ -23,25 +23,92 @@ h1 {
   text-align: center;
 }
 
-span
+#fp-nav ul li a span 
 {
-  background: #fff !important;
+  background:  rgb(46, 42, 42) !important;
   opacity: 0.6;
+  color: #EB6666;
 }
 
 
 
 
+/*start of contact section*/
+.contact-title h1 span:first-child::before
+{
+  content: "F";
+  color: #EB6666;
+  font-size: 1.6em;
+  font-weight: 700;
+}
 
-.contact-me li
+.contact-title h1 span:last-child:after
+{
+  content: "?";
+  color: #EB6666;
+  font-size: 1.29em;
+  font-weight: 700;
+}
+
+
+
+
+.contact-data p a
+{
+  text-decoration: none;
+  color: inherit;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
+.contact-data p a:hover
+{
+  color: rgb(25, 161, 199);
+}
+
+
+/*social icons*/
+.social-data li
 {
   display: inline;
+
 }
-.contact-me li a
+.social-data li a
 {
-  color: #fff;
+  color: rgb(47, 47, 47);
   text-decoration: none;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
+.social-data li a i
+{
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+
+.social-data li a:first-child:hover
+{
+  color: #EB6666;
+}
+/*end of contact section*/
+
+
+
+/*start of footer*/
+footer
+{
+  border-top: solid 1px #EB6666;
+}
+footer p
+{}
+/*end of footer*/
+
 
 
 
@@ -49,4 +116,34 @@ span
 #thankyou
 {
   background-color: #fcff2d;
+  position: relative;
 }
+
+#thankyou div
+{
+  position:absolute;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  transform:translateY(300%);
+  -webkit-transform:translateY(300%);
+  -moz-transform:translateY(300%);
+  -ms-transform:translateY(300%);
+  -o-transform:translateY(300%);
+}
+/*end of thank you page*/
+
+
+
+
+
+
+
+/*start of mediaquery*/
+
+
+
+
+
+
+/*end of mediaquery*/
