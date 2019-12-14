@@ -15,3 +15,5 @@ new fullpage('#fullpage',{
   parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
   lazyLoading: true
 })
+
+
