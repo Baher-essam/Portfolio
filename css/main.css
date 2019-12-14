@@ -1,6 +1,17 @@
-h1 {
+body {
   font-family: 'segoe ui light';
 }
+
+
+
+.img-logo {
+  width: 90%;
+}
+.navbar-brand {
+  width: 7%;
+  margin: 0;
+}
+
 
 .s1 {
   background-image: url(../Images/albert-dera-le-Y0K_q1TY-unsplash.jpg);
