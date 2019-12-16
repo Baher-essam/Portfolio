@@ -14,8 +14,8 @@
 new fullpage('#fullpage',{
   autoscrokking: true,
   navigation : true,
-  anchors:[  'section1' , 'section2' , 'section3' , 'section4' ],
-  navigationTooltips: ['Home' , 'About us' , 'Works' , 'Contact'],
+  anchors:[  'Header' , 'AboutMe' , 'Portfolio' , 'Contact' ],
+  navigationTooltips: ['Header' , 'About Me' , 'Portfolio' , 'Contact'],
   showActiveTooltip: true,
   scrollingSpeed: 650,
   controlArrows:false,
@@ -27,3 +27,5 @@ new fullpage('#fullpage',{
 })
 
 
+//wow.js plugsin
+new WOW().init();
