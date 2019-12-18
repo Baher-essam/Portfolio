@@ -121,12 +121,12 @@ body {
 
 
 
-
 .s1 {
   background-image: url(../Images/albert-dera-le-Y0K_q1TY-unsplash.jpg);
   background-size: cover;
   color: #fff;
   position: relative;
+  background-attachment: fixed;
 }
 
 
@@ -138,7 +138,10 @@ body {
 }
 
 
-
+#aboutMe
+{
+  
+}
 
 
 
@@ -157,7 +160,6 @@ body {
   font-size: 1.6em;
   font-weight: 700;
 }
-
 
 
 
