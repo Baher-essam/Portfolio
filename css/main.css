@@ -9,6 +9,11 @@ body {
   font-family: 'segoe ui light';
 }
 
+.name
+{
+  font-family: 'Orbitron', sans-serif;
+}
+
 /* start of loading icon*/
 .sk-cube-grid 
 {
@@ -124,19 +129,6 @@ body {
   position: relative;
 }
 
-.s2 {
-  background-image: url(../Images/project\ 1.jpg);
-  background-size: cover;
-  color: #fff;
-  text-align: center;
-}
-
-.s3 {
-  background-image: url(../Images/project\ 3.jpg);
-  background-size: cover;
-  color: #fff;
-  text-align: center;
-}
 
 #fp-nav ul li a span 
 {
@@ -148,8 +140,29 @@ body {
 
 
 
+
+
+#aboutMeData h2 span:nth-child(1)::before
+{
+  content: "B";
+  color: #EB6666;
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+#aboutMeData h2 span:nth-child(2)::before
+{
+  content: "E";
+  color: #EB6666;
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+
+
+
 /*start of contact section*/
-.contact-title h1 span:first-child::before
+#contactTitle h1 span:first-child::before
 {
   content: "F";
   color: #EB6666;
@@ -157,7 +170,7 @@ body {
   font-weight: 700;
 }
 
-.contact-title h1 span:last-child:after
+#contactTitle h1 span:last-child:after
 {
   content: "?";
   color: #EB6666;
@@ -230,21 +243,15 @@ footer p
 /*thank you page*/
 #thankyou
 {
-  background-color: #fcff2d;
   position: relative;
 }
-
-#thankyou div
+.thanksImg
 {
-  position:absolute;
-  margin: 0 auto;
-  right: 0;
-  left: 0;
-  transform:translateY(300%);
-  -webkit-transform:translateY(300%);
-  -moz-transform:translateY(300%);
-  -ms-transform:translateY(300%);
-  -o-transform:translateY(300%);
+width: 90%;
+}
+.thanksData
+{
+
 }
 /*end of thank you page*/
 

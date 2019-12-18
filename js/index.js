@@ -14,15 +14,15 @@
 new fullpage('#fullpage',{
   autoscrokking: true,
   navigation : true,
-  anchors:[  'Header' , 'AboutMe' , 'Portfolio' , 'Contact' ],
-  navigationTooltips: ['Header' , 'About Me' , 'Portfolio' , 'Contact'],
+  anchors:[  'Header' , 'AboutMe' , 'Skills' , 'Portfolio' , 'Contact' ],
+  navigationTooltips: ['Header' , 'About Me' , 'Skills' , 'Portfolio' , 'Contact'],
   showActiveTooltip: true,
   scrollingSpeed: 650,
   controlArrows:false,
   slidesNavigation: true,
   scrollBar: false,
   parallax: true,
-  parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+  parallaxOptions: {type: 'reavel', percentage: 80, property: 'translate'},
   lazyLoading: true
 })
 
