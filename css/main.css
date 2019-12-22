@@ -2,7 +2,7 @@
 *{ margin: 0; padding: 0; box-sizing: border-box}
 body {font-family: 'segoe ui light'; overflow: hidden;}
 .container-fluid {padding: 0;}
-
+::selection { background-color:#000000; color:#fff;}
 /*start loading screen*/
 #loading
 {
@@ -210,6 +210,10 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
   -moz-transform: scale(1.3,1.3);
   -ms-transform: scale(1.3,1.3);
   -o-transform: scale(1.3,1.3);
+}
+.overlayData
+{
+  color: #fff;
 }
 /*end of Portfolio Section*/
 
