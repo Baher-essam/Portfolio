@@ -9,5 +9,18 @@
     })
 })
 
-//wow.js plugsin
+//wow.js fire function
 new WOW().init();
+
+//mixitup fire function
+var mixer = mixitup('.mixit');
+var mixer = mixitup(containerEl);
+
+var mixer = mixitup(containerEl, {
+  selectors: {
+      target: '.project'
+  },
+  animation: {
+      duration: 300
+  }
+});
