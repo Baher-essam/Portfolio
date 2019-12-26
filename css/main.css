@@ -102,6 +102,7 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
   color: #fff;
   position: relative;
   background-attachment: fixed;
+  clip-path: polygon(50% 0%, 100% 0, 100% 90%, 50% 96.5%, 0 90%, 0 0);
 }
 #headerData
 {
@@ -174,27 +175,98 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
   bottom: 0;
   width: 100%;
   margin: 0 auto;
-  background-color: #3d3c3c;
   opacity: 0;
-  transform: translate(100%,100%)rotate(-200deg);
-  -webkit-transform: translate(100%,100%)rotate(-200deg);
-  -moz-transform: translate(100%,100%)rotate(-200deg);
-  -ms-transform: translate(100%,100%)rotate(-200deg);
-  -o-transform: translate(100%,100%)rotate(-200deg);
-  transition: all 1s;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
+  height: 150%;
+  background-color: #3d3c3c;
+  transform: translate(-128%,-44%)rotate(45deg);
+  -webkit-transform: translate(-128%,-44%)rotate(45deg);
+  -moz-transform: translate(-128%,-44%)rotate(45deg);
+  -ms-transform: translate(-128%,-44%)rotate(45deg);
+  -o-transform: translate(-128%,-44%)rotate(45deg);
+  transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  -o-transition: all 0.7s;
 }
 .project:hover .projectOverlay
 {
-  transform: translate(0%,0%)rotate(0deg);
-  -webkit-transform: translate(0%,0%)rotate(0deg);
-  -moz-transform: translate(0%,0%)rotate(0deg);
-  -ms-transform: translate(0%,0%)rotate(0deg);
-  -o-transform: translate(0%,0%)rotate(0deg);
+  transform: translate(-92.5%,-13%)rotate(10deg);
+  -webkit-transform: translate(-92.5%,-13%)rotate(10deg);
+  -moz-transform: translate(-92.5%,-13%)rotate(10deg);
+  -ms-transform: translate(-92.5%,-13%)rotate(10deg);
+  -o-transform: translate(-92.5%,-13%)rotate(10deg);
   opacity: 0.4;
+  z-index: 4;
+}
+
+.projectOverlay1
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  opacity: 0;
+  height: 150%;
+  background-color: #3d3c3c;
+  transform: translate(-128%,-44%)rotate(45deg);
+  -webkit-transform: translate(-128%,-44%)rotate(45deg);
+  -moz-transform: translate(-128%,-44%)rotate(45deg);
+  -ms-transform: translate(-128%,-44%)rotate(45deg);
+  -o-transform: translate(-128%,-44%)rotate(45deg);
+  transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition-delay: 0.2s;
+}
+.project:hover .projectOverlay1
+{
+  transform: translate(-90%,-13%)rotate(10deg);
+  -webkit-transform: translate(-90%,-13%)rotate(10deg);
+  -moz-transform: translate(-90%,-13%)rotate(10deg);
+  -ms-transform: translate(-90%,-13%)rotate(10deg);
+  -o-transform: translate(-90%,-13%)rotate(10deg);
+  opacity: 0.4;
+  z-index: 3;
+}
+.projectOverlay2
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  opacity: 0;
+  height: 150%;
+  background-color: #3d3c3c;
+  transform: translate(-128%,-44%)rotate(45deg);
+  -webkit-transform: translate(-128%,-44%)rotate(45deg);
+  -moz-transform: translate(-128%,-44%)rotate(45deg);
+  -ms-transform: translate(-128%,-44%)rotate(45deg);
+  -o-transform: translate(-128%,-44%)rotate(45deg);
+  transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition-delay: 0.4s;
+}
+.project:hover .projectOverlay2
+{
+  transform: translate(-88%,-13%)rotate(10deg);
+  -webkit-transform: translate(-88%,-13%)rotate(10deg);
+  -moz-transform: translate(-88%,-13%)rotate(10deg);
+  -ms-transform: translate(-88%,-13%)rotate(10deg);
+  -o-transform: translate(-88%,-13%)rotate(10deg);
+  opacity: 0.4;
+  z-index: 2;
 }
 .projectImg img
 {
