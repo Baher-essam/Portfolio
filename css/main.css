@@ -97,23 +97,52 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
 
 /*start of Header Section*/
 #header {
-  background-image: url(../Images/albert-dera.jpg);
-  background-size: cover;
+background-color: rgb(50, 50, 50);
   color: #fff;
   position: relative;
   background-attachment: fixed;
-  clip-path: polygon(50% 0%, 100% 0, 100% 90%, 50% 96.5%, 0 90%, 0 0);
+  clip-path: polygon( 100% 0, 100% 92%, 50% 100%, 0 92%, 0 0);
 }
 #headerData
 {
-  /*transform -50*2*/
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 0;
   right: 0;
   bottom: 0;
 }
 .introName {font-family: 'Orbitron', sans-serif;}
+
+.headerImg 
+{
+  width: 12%;
+  margin: 0 auto;
+  overflow: hidden;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 90%, 0% 75%, 0% 25%);
+}
+.headerImg img
+{
+  transform: scale(1.75)translateY(20%);
+  -webkit-transform: scale(1.75)translateY(20%);
+  -moz-transform: scale(1.75)translateY(20%);
+  -ms-transform: scale(1.75)translateY(20%);
+  -o-transform: scale(1.75)translateY(20%);
+}
+#headerData > div > div > h1 > span
+{
+  color: #EB6666;
+}
+#headerData > div > div > a
+{
+  border: solid 1px #9e9e9e;
+  color: #fff;
+  font-weight: 500;
+}
+#headerData > div > div > a:hover
+{
+  background-color: #EB6666;
+  border-color: #EB6666;
+}
 /*end of Header Section*/
 
 
