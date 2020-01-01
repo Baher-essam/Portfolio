@@ -177,14 +177,25 @@ background-color: rgb(50, 50, 50);
 }
 /*end of skills Section*/
 
+/*start of what I do section*/
 
-/*start of Portfolio Section*/
-#portfolio
+
+
+/*end of what I do section*/
+
+
+
+
+
+
+
+/*start of project Section*/
+#projects
 {
   margin: 10% 0;
 }
 
-#portfolio >  div.container > ul li
+#projects >  div.container > ul li
 {
   display: inline;
   padding:  0 8px; 
@@ -352,7 +363,13 @@ background-color: rgb(50, 50, 50);
   -ms-transform: scale(1,1);
   -o-transform: scale(1,1);
 }
-/*end of Portfolio Section*/
+/*end of project Section*/
+
+
+
+
+
+
 
 
 
