@@ -124,6 +124,7 @@ particlesJS('particles-js',
 
 
 
+
 //waiting screen for loading site
 $(document).ready(function(){
   $("#loading").fadeOut(2000);
@@ -131,19 +132,20 @@ $(document).ready(function(){
       $("html").css("overflow" , "auto");
   })
 })
+//parallex js
+var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene, {
+  relativeInput: true
+});
+
 
 //wow.js fire function
 new WOW().init();
 
 //mixitup fire function
-var mixer = mixitup('.mixit');
-var mixer = mixitup(containerEl);
-
-var mixer = mixitup(containerEl, {
+var mixer = mixitup('#projects');
+var mixer = mixitup('#projects', {
   selectors: {
-      target: '.project'
-  },
-  animation: {
-      duration: 300
+      target: '.mix'
   }
 });
