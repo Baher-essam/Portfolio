@@ -97,7 +97,7 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
 
 /*start of Header Section*/
 #header {
-background-color: rgb(50, 50, 50);
+  background-color: rgb(50, 50, 50);
   color: #fff;
   position: relative;
   background-attachment: fixed;
@@ -197,15 +197,100 @@ background-color: rgb(50, 50, 50);
 {
   margin: 10% 0;
 }
+.skillsTitle
+{
+  position: relative;
+}
+.skillsTitle > h2
+{
+  font-size: 40px;
+  font-weight: 600;
+}
+.skillsTitle::before
+{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 32%;
+  margin: 0 auto;
+  border-top: solid 1px #888888;
+  width: 0%;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
+.skillsTitle:hover:before
+{
+  width: 10%;
+}
+.skillsTitle::after
+{
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 32%;
+  margin: 0 auto;
+  border-top: solid 1px #888888;
+  width: 0%;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
+.skillsTitle:hover:after
+{
+  width: 10%;
+}
+.skills ul li
+{
+  display: inline;
+  font-size: 60px;
+}
+
+.skills ul:nth-of-type(1) li:nth-of-type(1)
+{
+  color: rgb(44, 197, 199);
+}
+.skills ul:nth-of-type(1) li:nth-of-type(2)
+{
+  color: #EB6666;
+}
+.skills ul:nth-of-type(1) li:nth-of-type(3)
+{
+  color: rgb(228, 200, 39);
+}
+.skills ul:nth-of-type(1) li:nth-of-type(4)
+{
+  color: rgb(76, 16, 140);
+}
+.skills ul:nth-of-type(1) li:nth-of-type(5)
+{
+  color: orange;
+}
+.skills ul:nth-of-type(1) li:nth-of-type(6)
+{
+  color: red;
+}
+.skills ul:nth-of-type(2) li:nth-of-type(1)
+{
+  color: purple;
+}
+.skills ul:nth-of-type(2) li:nth-of-type(2)
+{
+  color: blue;
+}
+.skills ul:nth-of-type(2) li:nth-of-type(3)
+{
+  color: red;
+}
 /*end of skills Section*/
-
-
-
-
-
-
-
-
+.project:nth-child(4) .projectImg
+{
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 90%, 0% 75%, 0% 25%);
+}
 
 
 /*start of work section*/
@@ -223,17 +308,12 @@ background-color: rgb(50, 50, 50);
 
 
 
-
-
-
-
 /*start of project Section*/
 #projects
 {
-  margin: 10% 0;
+  margin: 5% 0;
   background-color: #888888;
 }
-
 #projects >  div.container > ul li
 {
   display: inline;
@@ -244,7 +324,6 @@ background-color: rgb(50, 50, 50);
   position: relative;
   overflow: hidden;
 }
-
 .projectOverlay
 {
   position: absolute;
@@ -262,11 +341,11 @@ background-color: rgb(50, 50, 50);
   -moz-transform: translate(-128%,-44%)rotate(45deg);
   -ms-transform: translate(-128%,-44%)rotate(45deg);
   -o-transform: translate(-128%,-44%)rotate(45deg);
-  transition: all 0.6s;
-  -webkit-transition: all 0.6s;
-  -moz-transition: all 0.6s;
-  -ms-transition: all 0.6s;
-  -o-transition: all 0.6s;
+  transition: all 0.45s;
+  -webkit-transition: all 0.45s;
+  -moz-transition: all 0.45s;
+  -ms-transition: all 0.45s;
+  -o-transition: all 0.45s;
 }
 .project:hover .projectOverlay
 {
@@ -296,11 +375,11 @@ background-color: rgb(50, 50, 50);
   -moz-transform: translate(-128%,-44%)rotate(45deg);
   -ms-transform: translate(-128%,-44%)rotate(45deg);
   -o-transform: translate(-128%,-44%)rotate(45deg);
-  transition: all 0.6s;
-  -webkit-transition: all 0.6s;
-  -moz-transition: all 0.6s;
-  -ms-transition: all 0.6s;
-  -o-transition: all 0.6s;
+  transition: all 0.45s;
+  -webkit-transition: all 0.45s;
+  -moz-transition: all 0.45s;
+  -ms-transition: all 0.45s;
+  -o-transition: all 0.45s;
   transition-delay: 0.2s;
 }
 .project:hover .projectOverlay1
@@ -330,11 +409,11 @@ background-color: rgb(50, 50, 50);
   -moz-transform: translate(-128%,-44%)rotate(45deg);
   -ms-transform: translate(-128%,-44%)rotate(45deg);
   -o-transform: translate(-128%,-44%)rotate(45deg);
-  transition: all 0.6s;
-  -webkit-transition: all 0.6s;
-  -moz-transition: all 0.6s;
-  -ms-transition: all 0.6s;
-  -o-transition: all 0.6s;
+  transition: all 0.45s;
+  -webkit-transition: all 0.45s;
+  -moz-transition: all 0.45s;
+  -ms-transition: all 0.45s;
+  -o-transition: all 0.45s;
   transition-delay: 0.4s;
 }
 .project:hover .projectOverlay2
@@ -421,12 +500,6 @@ background-color: rgb(50, 50, 50);
   -o-transform: scale(1,1);
 }
 /*end of project Section*/
-
-
-
-
-
-
 
 
 
@@ -520,6 +593,7 @@ background-color: rgb(50, 50, 50);
 /*end of contact section*/
 
 
+
 /*start of footer*/
 #footer
 {
@@ -535,8 +609,6 @@ background-color: rgb(50, 50, 50);
 
 
 
-
-
 /*thank you page*/
 #thankyou
 {
@@ -547,7 +619,6 @@ background-color: rgb(50, 50, 50);
 width: 90%;
 }
 /*end of thank you page*/
-
 
 
 
