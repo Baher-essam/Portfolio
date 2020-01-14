@@ -111,6 +111,44 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
   right: 0;
   bottom: 0;
 }
+#headerData a
+{
+  position: relative;
+  padding-right: 30px;
+}
+#headerData i 
+{
+  animation: arrowmove 1s infinite;
+  -webkit-animation: arrowmove 1s infinite;
+  position: absolute;
+  margin-left: 5px;
+}
+@keyframes arrowmove {
+  0% 
+  {
+    transform: translateY(5px);
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+}
+    50%
+    {
+      transform: translateY(8px);
+      -webkit-transform: translateY(8px);
+      -moz-transform: translateY(8px);
+      -ms-transform: translateY(8px);
+      -o-transform: translateY(8px);
+}
+    100%
+    {
+      transform: translateY(5px);
+      -webkit-transform: translateY(5px);
+      -moz-transform: translateY(5px);
+      -ms-transform: translateY(5px);
+      -o-transform: translateY(5px);
+}
+  }
 .introName {font-family: 'Orbitron', sans-serif;}
 
 .headerImg 
@@ -229,7 +267,7 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
 /*start of skills Section*/
 #skills
 {
-  margin: 10% 0;
+  margin: 3% 0;
 }
 .skillsTitle
 {
@@ -324,28 +362,126 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
 
 
 
-/*start of work section*/
-#work
+/*start of services section*/
+#services
 {
-  padding: 10% 0;
-  background-color: #888888;
+  padding: 3% 0;
+  background-color: #bbbbbb85;
 }
-.workImg
+#services i
+{
+  font-size: 5.5rem;
+}
+.servicesTitle
+{
+  position: relative;
+}
+.servicesTitle
+{
+  font-size: 40px;
+  font-weight: 600;
+}
+.servicesTitle::before
+{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 32%;
+  margin: 0 auto;
+  border-top: solid 1px #888888;
+  width: 0%;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
+.servicesTitle:hover:before
+{
+  width: 10%;
+}
+.servicesTitle::after
+{
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 32%;
+  margin: 0 auto;
+  border-top: solid 1px #888888;
+  width: 0%;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
+.servicesTitle:hover:after
+{
+  width: 10%;
+}
+.servicesImg
 {
   width: 70%;
   margin: 0 auto;
 }
-/*end of work section*/
+/*end of services section*/
 
 
 
 /*start of project Section*/
 #projects
 {
-  margin: 5% 0;
-  background-color: #888888;
+  padding: 3% 0;
+  background-color: #bbbbbb85;
 }
-#projects >  div.container > ul li
+.ProjectTitle
+{
+  position: relative;
+}
+.ProjectTitle > h2
+{
+  font-size: 40px;
+  font-weight: 600;
+}
+.ProjectTitle::before
+{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 32%;
+  margin: 0 auto;
+  border-top: solid 1px #888888;
+  width: 0%;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
+.ProjectTitle:hover:before
+{
+  width: 10%;
+}
+.ProjectTitle::after
+{
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 32%;
+  margin: 0 auto;
+  border-top: solid 1px #888888;
+  width: 0%;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
+.ProjectTitle:hover:after
+{
+  width: 10%;
+}
+#projects >  div.container > div > div > ul >li
 {
   display: inline;
   padding:  0 8px; 
@@ -355,9 +491,18 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
   position: relative;
   overflow: hidden;
 }
-.project:nth-child(4) .projectImg
+ .pro div.project:nth-child(1)
 {
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 90%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%, 0% 0%);
+  transition: all 0.9s;
+  -webkit-transition: all 0.9s;
+  -moz-transition: all 0.9s;
+  -ms-transition: all 0.9s;
+  -o-transition: all 0.9s;
+}
+.pro div.project:nth-child(1):hover
+{
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 0%);
 }
 .projectOverlay
 {
@@ -533,6 +678,22 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
   -moz-transform: scale(1,1);
   -ms-transform: scale(1,1);
   -o-transform: scale(1,1);
+}
+/*modal*/
+#projectModal
+{
+  background-color: #ffffff5d;
+}
+.modal-content
+{
+  padding: 7% 1%;
+}
+/*carosal arrows*/
+.carousel-control-prev {
+  left: -16%;
+}
+.carousel-control-next {
+  right: -16%;
 }
 /*end of project Section*/
 
