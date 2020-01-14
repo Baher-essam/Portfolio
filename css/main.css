@@ -174,7 +174,10 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
   opacity: 0.3;
   z-index: -10;
 }
-
+#aboutMeData > p
+{
+  margin-bottom: 0.7rem;
+}
 #aboutMeData h2 span:nth-child(1)::before
 {
   content: "B";
@@ -190,7 +193,38 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
   font-size: 1.6em;
   font-weight: 700;
 }
+/*social icons for (contact section also)*/
+.social-data li
+{
+  display: inline;
+}
+.social-data:nth-child(2)
+{
+  display: inline;
+}
+.social-data li a
+{
+  color: rgb(47, 47, 47);
+  text-decoration: none;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.social-data li a i
+{
+  font-size: 22px;
+  margin-right: 10px;
+}
+.social-data li a:hover {color: #EB6666;}
+.socialName
+{
+  font-size: 25px;
+  font-weight: 600;
+}
 /*end of aboutme Section*/
+
 
 /*start of skills Section*/
 #skills
@@ -512,7 +546,6 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
   font-size: 1.6em;
   font-weight: 700;
 }
-
 #contactTitle h1 span:last-child:after
 {
   content: "?";
@@ -520,10 +553,7 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
   font-size: 1.29em;
   font-weight: 700;
 }
-.contact-data
-{
-  position: relative;
-}
+.contact-data {position: relative;}
 .contact-data p a
 {
   text-decoration: none;
@@ -534,10 +564,7 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
   -ms-transition: all ease-in-out 0.5s;
   -o-transition: all ease-in-out 0.5s;
 }
-.contact-data p a:hover
-{
-  color: rgb(25, 161, 199);
-}
+.contact-data p a:hover {color: rgb(25, 161, 199);}
 /*svg background*/
 .contact-data  svg:nth-of-type(1)
 {
@@ -555,30 +582,7 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
   opacity: 0.3;
   z-index: -10;
 }
-/*social icons*/
-.social-data li
-{
-  display: inline;
-}
-.social-data li a
-{
-  color: rgb(47, 47, 47);
-  text-decoration: none;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-}
-.social-data li a i
-{
-  font-size: 30px;
-  margin-right: 10px;
-}
-.social-data li a:first-child:hover
-{
-  color: #EB6666;
-}
+/*form*/
 .contact-form
 {
   position: relative;
@@ -594,17 +598,9 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
 /*end of contact section*/
 
 
-
 /*start of footer*/
-#footer
-{
-  border-top: solid 1px #9e9e9e;
-}
-#footer p
-{
-  color: #9e9e9e;
-}
-
+#footer {border-top: solid 1px #9e9e9e;}
+#footer p {color: #302e2e;}
 /*end of footer*/
 
 
