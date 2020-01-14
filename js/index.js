@@ -1,5 +1,4 @@
 
-
 //particlesJS
 particlesJS('particles-js',
   
@@ -132,15 +131,12 @@ $(document).ready(function(){
       $("html").css("overflow" , "auto");
   })
 })
-//parallex js
-var scene = document.getElementById('scene');
-var parallaxInstance = new Parallax(scene, {
-  relativeInput: true
-});
+
 
 
 //wow.js fire function
 new WOW().init();
+
 
 //mixitup fire function
 var mixer = mixitup('#projects');
@@ -148,4 +144,10 @@ var mixer = mixitup('#projects', {
   selectors: {
       target: '.mix'
   }
+});
+
+//parallex js
+var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene, {
+  relativeInput: true
 });
