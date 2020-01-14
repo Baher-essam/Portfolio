@@ -287,10 +287,7 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
   color: red;
 }
 /*end of skills Section*/
-.project:nth-child(4) .projectImg
-{
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 90%, 0% 75%, 0% 25%);
-}
+
 
 
 /*start of work section*/
@@ -323,6 +320,10 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
 {
   position: relative;
   overflow: hidden;
+}
+.project:nth-child(4) .projectImg
+{
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 90%, 0% 75%, 0% 25%);
 }
 .projectOverlay
 {
@@ -549,7 +550,7 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
 .contact-data  svg:nth-of-type(2)
 {
   position: absolute;
-  top: 35%;
+  top: 50%;
   left: -80%;
   opacity: 0.3;
   z-index: -10;
