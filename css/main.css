@@ -96,25 +96,65 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
 
 
 /*start of Header Section*/
-#header {
+header {
   background-color: rgb(50, 50, 50);
   color: #fff;
   position: relative;
-  background-attachment: fixed;
   clip-path: polygon( 100% 0, 100% 92%, 50% 100%, 0 92%, 0 0);
+  padding: 0 0 2%;
 }
 #headerData
 {
   position: absolute;
-  top: 30%;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  margin:  auto;
+  transform: translate(14%,60%);
+  -webkit-transform: translate(14%,60%);
+  -moz-transform: translate(14%,60%);
+  -ms-transform: translate(14%,60%);
+  -o-transform: translate(14%,60%);
 }
-#headerData a
+.introName {font-family: 'Orbitron', sans-serif;}
+
+.headerImg 
+{
+  width: 13%;
+  margin: 0 auto;
+  overflow: hidden;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 90%, 0% 75%, 0% 25%);
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+}
+.headerImg:hover
+{
+  clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+}
+.headerImg img
+{
+  transform: scale(1.75)translateY(20%);
+  -webkit-transform: scale(1.75)translateY(20%);
+  -moz-transform: scale(1.75)translateY(20%);
+  -ms-transform: scale(1.75)translateY(20%);
+  -o-transform: scale(1.75)translateY(20%);
+}
+#headerData > div> h1 > span
+{
+  color: #EB6666;
+}
+#headerData >  div> a
 {
   position: relative;
   padding-right: 30px;
+  border: solid 1px #9e9e9e;
+  color: #fff;
+  font-weight: 500;
+}
+#headerData > div> a:hover
+{
+  background-color: #EB6666;
+  border-color: #EB6666;
 }
 #headerData i 
 {
@@ -149,47 +189,6 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
       -o-transform: translateY(5px);
 }
   }
-.introName {font-family: 'Orbitron', sans-serif;}
-
-.headerImg 
-{
-  width: 12%;
-  margin: 0 auto;
-  overflow: hidden;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 90%, 0% 75%, 0% 25%);
-  transition: all 0.6s;
-  -webkit-transition: all 0.6s;
-  -moz-transition: all 0.6s;
-  -ms-transition: all 0.6s;
-  -o-transition: all 0.6s;
-}
-.headerImg:hover
-{
-  clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
-}
-.headerImg img
-{
-  transform: scale(1.75)translateY(20%);
-  -webkit-transform: scale(1.75)translateY(20%);
-  -moz-transform: scale(1.75)translateY(20%);
-  -ms-transform: scale(1.75)translateY(20%);
-  -o-transform: scale(1.75)translateY(20%);
-}
-#headerData > div > div > h1 > span
-{
-  color: #EB6666;
-}
-#headerData > div > div > a
-{
-  border: solid 1px #9e9e9e;
-  color: #fff;
-  font-weight: 500;
-}
-#headerData > div > div > a:hover
-{
-  background-color: #EB6666;
-  border-color: #EB6666;
-}
 /*end of Header Section*/
 
 
@@ -756,6 +755,9 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
   opacity: 0.3;
   z-index: -10;
 }
+/*modal msg at contact form after click*/
+.checkedData {margin: auto 0;}
+.contactMessage {padding: 2%;}
 /*end of contact section*/
 
 
