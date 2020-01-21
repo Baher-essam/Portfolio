@@ -81,15 +81,23 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
 
 
 /*start of navbar data*/
-.img-logo { width: 70%; }
 .navbar-brand 
 {
-  width: 7%;
+  width: 5%;
   margin: 0;
 }
+.img-logo { width: 100%; }
 .navbar-collapse ul
 {
   font-size: 20px;
+}
+.navbar-collapse ul li
+{
+  padding: 0 5px;
+}
+.navbar-collapse ul li a
+{
+  padding: 0;
 }
 /*adding transition*/
 /*end of navbar data*/
@@ -101,17 +109,20 @@ header {
   color: #fff;
   position: relative;
   clip-path: polygon( 100% 0, 100% 92%, 50% 100%, 0 92%, 0 0);
-  padding: 0 0 2%;
+}
+.particles-js-canvas-el
+{
+  height: 880px !important;
 }
 #headerData
 {
   position: absolute;
   margin:  auto;
-  transform: translate(14%,60%);
-  -webkit-transform: translate(14%,60%);
-  -moz-transform: translate(14%,60%);
-  -ms-transform: translate(14%,60%);
-  -o-transform: translate(14%,60%);
+  transform: translate(14%,70%);
+  -webkit-transform: translate(14%,70%);
+  -moz-transform: translate(14%,70%);
+  -ms-transform: translate(14%,70%);
+  -o-transform: translate(14%,70%);
 }
 .introName {font-family: 'Orbitron', sans-serif;}
 
@@ -815,12 +826,95 @@ header {
 /*end of footer*/
 
 
+
+
+
+
+
+
+
 /*start of mediaquery*/
-@media only screen and (maxwidth: 500px)
-{
-  body
+@media only screen and (max-width: 995px) {
+  .navbar-brand 
   {
-    text-align: center;
+    width: 7%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .navbar-brand 
+  {
+    width: 7%;
+  }
+  .navbar-collapse ul
+  {
+    font-size: 16px;
+  }
+  .navbar-collapse ul li
+  {
+    padding: 0 1px;
+    margin: auto 0;
+  }
+  .navbar-collapse
+  {
+    margin: 0 0 2%;
+  }
+}
+
+@media only screen and (max-width: 575px) 
+{
+  .navbar-brand 
+  {
+    width: 10%;
+  }
+  .navbar-collapse ul
+  {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .navbar-collapse ul li
+  {
+    padding: 5px 0;
+  }
+}
+
+@media only screen and (max-width: 484px) 
+{
+  .navbar-brand 
+  {
+    width: 10%;
+  } 
+}
+
+@media only screen and (max-width: 410px)
+{
+  .navbar-brand 
+  {
+    width: 12%;
+  } 
+}
+
+@media only screen and (max-width: 360px)
+{
+  .navbar-brand 
+  {
+    width: 12%;
+  } 
+}
+
+@media only screen and (max-width: 300px)
+{
+  .navbar-brand 
+  {
+    width: 15%;
+  }
+}
+
+@media only screen and (max-width: 270px)
+{
+  .navbar-brand 
+  {
+    width: 18%;
   }
 }
 /*end of mediaquery*/
