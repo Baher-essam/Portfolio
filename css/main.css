@@ -2,7 +2,43 @@
 *{ margin: 0; padding: 0; box-sizing: border-box}
 body {font-family: 'segoe ui light'; overflow: hidden;}
 .container-fluid {padding: 0;}
-::selection { background-color:#000000; color:#fff;}
+::selection { background-color:#000000a3; color:#fff;}
+a {color: #fff;}
+/*************************************/
+
+/*top btn*/
+#top {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#top::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#top:hover { cursor: pointer;background-color: #333;}
+#top:active {background-color: #555;}
+#top.show {opacity: 1;visibility: visible;}
+/*end of top btn*/
+/*************************************/
+
+
 /*start loading screen*/
 #loading
 {
@@ -15,7 +51,6 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
   z-index: 999999999999999;
 }
 /*end of loading screen*/
-
 /* start of loading icon*/
 .sk-cube-grid 
 {
@@ -78,41 +113,49 @@ body {font-family: 'segoe ui light'; overflow: hidden;}
   } 
 }
 /* end of loading icon*/
+/*************************************/
 
 
-/*start of navbar data*/
-.navbar-brand 
+/*start of navbar */
+.navbar 
 {
-  width: 5%;
-  margin: 0;
+  transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  background-color: transparent;
 }
+.navbar-brand {width: 5%; margin: 0;}
 .img-logo { width: 100%; }
-.navbar-collapse ul
-{
-  font-size: 20px;
+.navbar-collapse ul {font-size: 20px;}
+.navbar-collapse ul li {padding: 0 5px;}
+.navbar-collapse ul li a {padding: 0;}
+/*end of navbar */
+
+/*start scrolled navbar*/
+.navbar-fixed-top.scrolled {
+  background-color: #0000006d;
+  color: #fff;
+  transition: background-color 0.8s linear;
+  -webkit-transition: background-color 0.8s linear;
+  -moz-transition: background-color 0.8s linear;
+  -ms-transition: background-color 0.8s linear;
+  -o-transition: background-color 0.8s linear;
 }
-.navbar-collapse ul li
-{
-  padding: 0 5px;
-}
-.navbar-collapse ul li a
-{
-  padding: 0;
-}
-/*adding transition*/
-/*end of navbar data*/
+/*end pf scrolled navbar*/
+/*end of navbar */
+/*************************************/
 
 
 /*start of Header Section*/
+/*header height control with particles js*/
+.particles-js-canvas-el {height: 880px !important;}
 header {
   background-color: rgb(50, 50, 50);
   color: #fff;
   position: relative;
   clip-path: polygon( 100% 0, 100% 92%, 50% 100%, 0 92%, 0 0);
-}
-.particles-js-canvas-el
-{
-  height: 880px !important;
 }
 #headerData
 {
@@ -125,7 +168,6 @@ header {
   -o-transform: translate(14%,70%);
 }
 .introName {font-family: 'Orbitron', sans-serif;}
-
 .headerImg 
 {
   width: 13%;
@@ -150,10 +192,7 @@ header {
   -ms-transform: scale(1.75)translateY(20%);
   -o-transform: scale(1.75)translateY(20%);
 }
-#headerData > div> h1 > span
-{
-  color: #EB6666;
-}
+#headerData > div> h1 > span {color: #EB6666;}
 #headerData >  div> a
 {
   position: relative;
@@ -201,19 +240,11 @@ header {
 }
   }
 /*end of Header Section*/
-
-
-
+/*****************************/
 
 /*start of aboutme Section*/
-#aboutMe
-{
-  margin: 10% 0;
-}
-#pesonalPhoto
-{
-  position: relative;
-}
+#aboutMe {margin: 10% 0;}
+#pesonalPhoto {position: relative;}
 #pesonalPhoto svg
 {
   position: absolute;
@@ -222,10 +253,7 @@ header {
   opacity: 0.3;
   z-index: -10;
 }
-#aboutMeData > p
-{
-  margin-bottom: 0.7rem;
-}
+#aboutMeData > p {margin-bottom: 0.7rem;}
 #aboutMeData h2 span:nth-child(1)::before
 {
   content: "B";
@@ -429,11 +457,6 @@ header {
 {
   width: 10%;
 }
-.servicesImg
-{
-  width: 70%;
-  margin: 0 auto;
-}
 /*end of services section*/
 
 
@@ -616,10 +639,7 @@ header {
   opacity: 0.3;
   z-index: 2;
 }
-.projectImg
-{
-  position: relative;
-}
+.projectImg {position: relative;}
 .projectImg img
 {
   transition: all 2s ;
@@ -828,24 +848,19 @@ header {
 
 
 
-
-
-
+/*1024 , 768, 425, 375, 320*/
 
 
 /*start of mediaquery*/
-@media only screen and (max-width: 995px) {
+@media only screen and (max-width: 1024px) {
   .navbar-brand 
   {
-    width: 7%;
+    width: 8%;
   }
 }
 
-@media only screen and (max-width: 770px) {
-  .navbar-brand 
-  {
-    width: 7%;
-  }
+@media only screen and (max-width: 768px) {
+
   .navbar-collapse ul
   {
     font-size: 16px;
@@ -860,61 +875,11 @@ header {
     margin: 0 0 2%;
   }
 }
-
-@media only screen and (max-width: 575px) 
+@media only screen and (max-width: 425px)
 {
-  .navbar-brand 
-  {
-    width: 10%;
-  }
-  .navbar-collapse ul
-  {
-    font-size: 20px;
-    font-weight: 500;
-  }
-  .navbar-collapse ul li
-  {
-    padding: 5px 0;
-  }
-}
-
-@media only screen and (max-width: 484px) 
-{
-  .navbar-brand 
-  {
-    width: 10%;
-  } 
-}
-
-@media only screen and (max-width: 410px)
-{
-  .navbar-brand 
-  {
-    width: 12%;
-  } 
-}
-
-@media only screen and (max-width: 360px)
-{
-  .navbar-brand 
-  {
-    width: 12%;
-  } 
-}
-
-@media only screen and (max-width: 300px)
-{
-  .navbar-brand 
+  .navbar-brand  
   {
     width: 15%;
-  }
-}
-
-@media only screen and (max-width: 270px)
-{
-  .navbar-brand 
-  {
-    width: 18%;
-  }
+  } 
 }
 /*end of mediaquery*/

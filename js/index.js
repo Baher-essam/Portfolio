@@ -1,4 +1,23 @@
 
+
+//top btn
+var btn = $('#top');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+//showNavbar
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar-fixed-top");
+    var $header = $("header")
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $header.height());
+  });
+});
 //particlesJS​
 particlesJS('particles-js',
   
@@ -151,3 +170,5 @@ var scene = document.getElementById('scene');
 var parallaxInstance = new Parallax(scene, {
   relativeInput: true
 });
+
+
